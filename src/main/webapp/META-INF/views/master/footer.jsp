@@ -16,6 +16,14 @@
 <%@taglib prefix="tiles" uri="http://tiles.apache.org/tags-tiles"%>
 <%@taglib prefix="acme" tagdir="/WEB-INF/tags"%>
 
+<style>
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+</style>
+
 <acme:footer-panel>
 	<acme:footer-subpanel code="master.footer.title.about">
 		<acme:footer-option icon="fa fa-building" code="master.footer.label.company" action="/master/company"/>
@@ -35,5 +43,10 @@
 	<acme:footer-logo logo="images/logo.png">
 		<acme:footer-copyright code="master.company.name"/>
 	</acme:footer-logo>		
-	
 </acme:footer-panel>
+<br><br>
+<div class="container">
+	<a href='<acme:print value="${requestScope['banner']['url']}"/>'>
+		<img style="height:200px;" src='<acme:print value="${requestScope['banner']['picture']}"/>' alt='<acme:print value="${requestScope['banner']['slogan']}"/>'/>
+	</a>
+</div>
