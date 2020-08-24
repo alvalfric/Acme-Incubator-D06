@@ -1,0 +1,11 @@
+authenticated.forum-message.form.label.title = Title
+authenticated.forum-message.form.label.creation = Creation date
+authenticated.forum-message.form.label.tags = Tags
+authenticated.forum-message.form.label.body = Message body
+authenticated.forum-message.form.label.confirmation = Confirmation checkbox
+
+authenticated.forum-message.form.button.create = Post message 
+authenticated.forum-message.form.button.return = Return
+
+authenticated.forum-message.error.confirmation = Must confirm before posting
+authenticated.forum-message.error.spam = Must not contain spam words

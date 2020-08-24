@@ -1,0 +1,6 @@
+authenticated.bookkeeper-request.form.label.firmName = Firm Name
+authenticated.bookkeeper-request.form.label.responsabilityStatement = Responsability Statement
+
+authenticated.bookkeeper-request.form.button.create = Request
+authenticated.bookkeeper-request.form.button.update = Update
+authenticated.bookkeeper-request.form.button.return = Return

@@ -1,0 +1,11 @@
+authenticated.forum-message.form.label.title = Título
+authenticated.forum-message.form.label.creation = Fecha de creación
+authenticated.forum-message.form.label.tags = Etiquetas
+authenticated.forum-message.form.label.body = Cuerpo del mensaje
+authenticated.forum-message.form.label.confirmation = Casilla de confirmación
+
+authenticated.forum-message.form.button.create = Publicar mensaje
+authenticated.forum-message.form.button.return = Volver
+
+authenticated.forum-message.error.confirmation = Debe confirmar antes de publicar
+authenticated.forum-message.error.spam = No debe contener palabras spam

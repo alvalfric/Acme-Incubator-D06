@@ -1,0 +1,11 @@
+entrepeneur.activity.form.label.title = Título
+entrepeneur.activity.form.label.creation = Fecha de Creación
+entrepeneur.activity.form.label.deadline = Fecha de Finalización
+entrepeneur.activity.form.label.money = Cantidad de Dinero
+
+entrepeneur.activity.form.button.create = Crear
+entrepeneur.activity.form.button.update = Actualizar
+entrepeneur.activity.form.button.delete = Borrar
+entrepeneur.activity.form.button.return = Volver
+
+administrator.inquirie.error.currency = Debe estar en € o EUR
