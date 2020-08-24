@@ -43,14 +43,6 @@
        drop 
        foreign key FK_4m34h1uxtm7i0d83g5g2ihq5u;
 
-    alter table `consumer` 
-       drop 
-       foreign key FK_6cyha9f1wpj0dpbxrrjddrqed;
-
-    alter table `credit_card` 
-       drop 
-       foreign key `FK31e9eqi896koc93q7yjs5yoox`;
-
     alter table `entrepeneur` 
        drop 
        foreign key FK_pwrtga2lkxnda15j1bgh7lbaw;
@@ -87,10 +79,6 @@
        drop 
        foreign key FK_8xx5nujhuio3advxc2freyu65;
 
-    alter table `provider` 
-       drop 
-       foreign key FK_b1gwnjqm6ggy9yuiqm0o4rlmd;
-
     drop table if exists `accounting_record`;
 
     drop table if exists `activity`;
@@ -113,10 +101,6 @@
 
     drop table if exists `challenge`;
 
-    drop table if exists `consumer`;
-
-    drop table if exists `credit_card`;
-
     drop table if exists `customization_parameter`;
 
     drop table if exists `entrepeneur`;
@@ -138,8 +122,6 @@
     drop table if exists `overture`;
 
     drop table if exists `patron`;
-
-    drop table if exists `provider`;
 
     drop table if exists `shout`;
 
