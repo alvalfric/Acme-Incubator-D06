@@ -18,7 +18,7 @@
         `deadline` datetime(6),
         `money_amount` double precision,
         `money_currency` varchar(255),
-        `title` varchar(255),
+        `title` varchar(256),
         `investment_round_id` integer not null,
         primary key (`id`)
     ) engine=InnoDB;
@@ -54,8 +54,8 @@
         `offer_amount` double precision,
         `offer_currency` varchar(255),
         `reject_justification` varchar(255),
-        `statement` varchar(255),
-        `status` varchar(255),
+        `statement` varchar(4096),
+        `status` varchar(256),
         `ticker` varchar(255),
         `investment_round_id` integer not null,
         `investor_id` integer not null,
@@ -184,12 +184,12 @@
         `amount_amount` double precision,
         `amount_currency` varchar(255),
         `creation` datetime(6),
-        `description` varchar(255),
+        `description` varchar(4096),
         `final_mode` bit not null,
-        `link` varchar(255),
-        `round` varchar(255),
+        `link` varchar(2048),
+        `round` varchar(256),
         `ticker` varchar(255),
-        `title` varchar(255),
+        `title` varchar(256),
         `entrepeneur_id` integer not null,
         primary key (`id`)
     ) engine=InnoDB;
@@ -207,20 +207,20 @@
     create table `notice` (
        `id` integer not null,
         `version` integer not null,
-        `body` varchar(512),
+        `body` varchar(2048),
         `creation` datetime(6),
         `deadline` datetime(6),
-        `header_picture` varchar(255),
-        `related_link1` varchar(255),
-        `related_link2` varchar(255),
-        `title` varchar(255),
+        `header_picture` varchar(2048),
+        `related_link1` varchar(2048),
+        `related_link2` varchar(2048),
+        `title` varchar(256),
         primary key (`id`)
     ) engine=InnoDB;
 
     create table `overture` (
        `id` integer not null,
         `version` integer not null,
-        `body` varchar(255),
+        `body` varchar(4096),
         `contact_email_display_name` varchar(255),
         `contact_email_domain` varchar(255),
         `contact_email_user` varchar(255),
@@ -230,7 +230,7 @@
         `max_money_currency` varchar(255),
         `min_money_amount` double precision,
         `min_money_currency` varchar(255),
-        `title` varchar(255),
+        `title` varchar(256),
         primary key (`id`)
     ) engine=InnoDB;
 
@@ -250,41 +250,41 @@
     create table `shout` (
        `id` integer not null,
         `version` integer not null,
-        `author` varchar(255),
+        `author` varchar(1024),
         `moment` datetime(6),
-        `text` varchar(255),
+        `text` varchar(4096),
         primary key (`id`)
     ) engine=InnoDB;
 
     create table `technology_record` (
        `id` integer not null,
         `version` integer not null,
-        `activity_sector` varchar(255),
-        `description` varchar(255),
+        `activity_sector` varchar(256),
+        `description` varchar(4096),
         `email_display_name` varchar(255),
         `email_domain` varchar(255),
         `email_user` varchar(255),
-        `inventor_name` varchar(255),
-        `source_type` varchar(255),
+        `inventor_name` varchar(256),
+        `source_type` varchar(256),
         `stars` integer,
-        `title` varchar(255),
-        `website` varchar(255),
+        `title` varchar(256),
+        `website` varchar(2048),
         primary key (`id`)
     ) engine=InnoDB;
 
     create table `tool_record` (
        `id` integer not null,
         `version` integer not null,
-        `activity_sector` varchar(255),
-        `description` varchar(255),
+        `activity_sector` varchar(256),
+        `description` varchar(4096),
         `email_display_name` varchar(255),
         `email_domain` varchar(255),
         `email_user` varchar(255),
-        `inventor_name` varchar(255),
+        `inventor_name` varchar(256),
         `source_type` varchar(255),
         `stars` integer,
-        `title` varchar(255),
-        `website` varchar(255),
+        `title` varchar(256),
+        `website` varchar(2048),
         primary key (`id`)
     ) engine=InnoDB;
 
