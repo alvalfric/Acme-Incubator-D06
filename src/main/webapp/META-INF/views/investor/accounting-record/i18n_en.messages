@@ -1,0 +1,10 @@
+investor.accounting-record.form.label.title = Title
+investor.accounting-record.form.label.status = Status
+investor.accounting-record.form.label.creation = Creation
+investor.accounting-record.form.label.body = Body
+
+investor.accounting-record.list.label.title = Title
+investor.accounting-record.list.label.status = Status
+investor.accounting-record.list.label.creation = Creation
+
+investor.accounting-record.form.button.return = Return

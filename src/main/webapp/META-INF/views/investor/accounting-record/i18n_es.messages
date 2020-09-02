@@ -1,0 +1,10 @@
+investor.accounting-record.form.label.title = Título
+investor.accounting-record.form.label.status = Estado
+investor.accounting-record.form.label.creation = Fecha de creación
+investor.accounting-record.form.label.body = Cuerpo
+
+investor.accounting-record.list.label.title = Título
+investor.accounting-record.list.label.status = Estado
+investor.accounting-record.list.label.creation = Fecha de creación
+
+investor.accounting-record.form.button.return = Volver

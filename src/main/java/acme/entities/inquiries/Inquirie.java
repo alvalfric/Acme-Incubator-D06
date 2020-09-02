@@ -15,6 +15,8 @@ import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.PastOrPresent;
 
+import org.hibernate.validator.constraints.Length;
+
 import acme.datatypes.Email;
 import acme.framework.datatypes.Money;
 import acme.framework.entities.DomainEntity;
@@ -32,6 +34,8 @@ public class Inquirie extends DomainEntity {
 	private static final long	serialVersionUID	= 1L;
 
 	@NotBlank
+	@Column(length = 256)
+	@Length(max = 256)
 	private String				title;
 
 	@NotNull
@@ -45,8 +49,8 @@ public class Inquirie extends DomainEntity {
 	private Date				deadline;
 
 	@NotBlank
-	@Column(name = "body"/* , length = 512 */)
-	//@Pattern(regexp = ".*(\\n.*){1,}")
+	@Column(length = 4096)
+	@Length(max = 4096)
 	private String				body;
 
 	@NotNull
