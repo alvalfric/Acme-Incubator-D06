@@ -2,10 +2,10 @@
     create table `accounting_record` (
        `id` integer not null,
         `version` integer not null,
-        `body` varchar(255),
+        `body` varchar(4096),
         `creation` datetime(6),
-        `status` varchar(255),
-        `title` varchar(255),
+        `status` varchar(256),
+        `title` varchar(256),
         `bookkeeper_id` integer not null,
         `investment_round_id` integer not null,
         primary key (`id`)
@@ -33,10 +33,10 @@
     create table `alferez_bulletin` (
        `id` integer not null,
         `version` integer not null,
-        `author` varchar(255),
+        `author` varchar(256),
         `moment` datetime(6),
-        `type` varchar(255),
-        `url` varchar(255),
+        `type` varchar(256),
+        `url` varchar(4096),
         primary key (`id`)
     ) engine=InnoDB;
 
@@ -72,9 +72,9 @@
     create table `banner` (
        `id` integer not null,
         `version` integer not null,
-        `picture` varchar(255),
-        `slogan` varchar(255),
-        `url` varchar(255),
+        `picture` varchar(2048),
+        `slogan` varchar(256),
+        `url` varchar(2048),
         `patron_id` integer not null,
         primary key (`id`)
     ) engine=InnoDB;
@@ -100,25 +100,25 @@
     create table `challenge` (
        `id` integer not null,
         `version` integer not null,
-        `average_goal` varchar(255),
-        `average_reward` varchar(255),
+        `average_goal` varchar(256),
+        `average_reward` varchar(256),
         `deadline` datetime(6),
-        `description` varchar(255),
-        `expert_goal` varchar(255),
-        `expert_reward` varchar(255),
-        `rookie_goal` varchar(255),
-        `rookie_reward` varchar(255),
-        `title` varchar(255),
+        `description` varchar(4096),
+        `expert_goal` varchar(256),
+        `expert_reward` varchar(256),
+        `rookie_goal` varchar(256),
+        `rookie_reward` varchar(256),
+        `title` varchar(256),
         primary key (`id`)
     ) engine=InnoDB;
 
     create table `customization_parameter` (
        `id` integer not null,
         `version` integer not null,
-        `activity_sectors` varchar(255),
+        `activity_sectors` varchar(4096),
         `spam_threshold` double precision,
-        `spam_words_english` varchar(255),
-        `spam_words_spanish` varchar(255),
+        `spam_words_english` varchar(4096),
+        `spam_words_spanish` varchar(4096),
         primary key (`id`)
     ) engine=InnoDB;
 
@@ -136,7 +136,7 @@
     create table `forum` (
        `id` integer not null,
         `version` integer not null,
-        `forum_title` varchar(255),
+        `forum_title` varchar(256),
         `investment_round_id` integer not null,
         primary key (`id`)
     ) engine=InnoDB;
@@ -144,10 +144,10 @@
     create table `forum_message` (
        `id` integer not null,
         `version` integer not null,
-        `body` varchar(255),
+        `body` varchar(4096),
         `creation` datetime(6),
-        `tags` varchar(255),
-        `title` varchar(255),
+        `tags` varchar(1024),
+        `title` varchar(256),
         `forum_id` integer not null,
         `user_id` integer not null,
         primary key (`id`)
@@ -164,7 +164,7 @@
     create table `inquirie` (
        `id` integer not null,
         `version` integer not null,
-        `body` varchar(255),
+        `body` varchar(4096),
         `contact_email_display_name` varchar(255),
         `contact_email_domain` varchar(255),
         `contact_email_user` varchar(255),
@@ -174,7 +174,7 @@
         `max_money_currency` varchar(255),
         `min_money_amount` double precision,
         `min_money_currency` varchar(255),
-        `title` varchar(255),
+        `title` varchar(256),
         primary key (`id`)
     ) engine=InnoDB;
 
